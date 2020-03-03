@@ -10,6 +10,13 @@ FIND_PATH(BOOST_DIR "boost")
 include_directories("${LIBICP_SRC_DIR}")
 include_directories("${BOOST_DIR}")
 
+#include directories for lasreaders
+
+include_directories("/LAStools/LASlib/inc")
+include_directories("/LAStools/LASzip/src")
+include_directories("/LAStools/LASlib/lib")
+
+
 # determine if OpenMP can/should be used
 option(USE_OPENMP "Enable OpenMP?" ON) # set to OFF to disable
 if(USE_OPENMP)
@@ -32,3 +39,4 @@ set(CMAKE_BUILD_TYPE Release)
 # build demo program
 add_executable(icp ${LIBICP_SRC_FILES})
 
+target_link_libraries(icp /LAStools/LASlib/lib/liblas.a)
