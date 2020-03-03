@@ -5,7 +5,8 @@
 #                                                                                  #
 # This file is part of libicp.                                                     #
 # Authors:  Andreas Geiger                                                         #
-#           Please send any bugreports to geiger@kit.edu                           #
+#           Please send any bugreports to geiger@kit.edu   
+# LASReaders Update: Chelsea Scott - cpscott1@asu.edu            
 #                                                                                  #
 # libicp is free software; you can redistribute it and/or modify it under the      #
 # terms of the GNU General Public License as published by the Free Software        #
@@ -90,7 +91,7 @@ The demo.cpp script was edited to conduct windowed ICP 3D differencing for this 
 
 Measuring change at the Earth’s surface: On-Demand vertical and 3D topographic differencing implemented in OpenTopography
   
-Chelsea Scotta: cpscott1@asu.edu(corresponding author)
+Chelsea Scott: cpscott1@asu.edu(corresponding author)
 Minh Phan, Viswanath Nandigam, Christopher Crosby, Ramon Arrowsmith
 
 To set up to run this script: 
