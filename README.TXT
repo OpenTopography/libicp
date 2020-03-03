@@ -85,3 +85,32 @@ into the documentation of the header file icp.h.
 Please send any feedback and bugreports to geiger@kit.edu
 Andreas Geiger
 
+
+The demo.cpp script was edited to conduct windowed ICP 3D differencing for this manuscript submitted to Computers & Geoscience.  
+
+Measuring change at the Earth’s surface: On-Demand vertical and 3D topographic differencing implemented in OpenTopography
+  
+Chelsea Scotta: cpscott1@asu.edu(corresponding author)
+Minh Phan, Viswanath Nandigam, Christopher Crosby, Ramon Arrowsmith
+
+To set up to run this script: 
+The following directory and txt file must be created. 
+Create tiled point cloud files of the pre- and post- event data: 
+
+For the compare (pre-event):
+las_diff/compare_x1_y1.las
+las_diff/compare_x2_y2.las
+...
+
+For the reference (post-event):
+las_diff/ref_x1_y1.las
+las_diff/ref_x2_y2.las
+...
+
+tiles.txt in the libicp-master directory
+tiles.txt
+x1 y1
+x2 y2
+...
+
+This will output a disp.txt which has the results of the 3D differencing. 
